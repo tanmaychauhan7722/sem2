@@ -1,86 +1,82 @@
-<html>
-<head>
-<style>
-    #header{
-        height: 15vh;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      nav {
+        height: 10vh;
+        background-color: pink;
+      }
+      main {
+        background-color: black;
+        padding: 15px;
+      }
+      .boxes {
+        display: flex;
+        margin: 5px;
+        background-color: green;
+        text-align: center;
+      }
+      .boxa {
         background-color: aqua;
-        border: solid black 2px;
-    }
-    .first{
-        height: 17vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin: 5px;
-    gap: 10px;
-}
-    
-    #firstone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 50vw;
-        background-color: beige;
-
-    }
-    #firsttwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 50vw;
-        background-color: rgb(140, 140, 113);
-
-    }
-    .second{
-        height: 52vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin: 5px;
-    gap: 10px;
-    }
-    #secondone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90%;
-        width: 50vw;
-        background-color: rgb(157, 123, 207);
-
-    }
-    #secondtwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90%;
-        width: 50vw;
-        background-color: rgb(85, 83, 155);
-
-    }
-    #ftr{
-        height: 15vh;
-        background-color: rgb(144, 66, 156);
-        border: solid black 2px;
-    }
-
-</style>
-</head>
-<body>
-    <div id="header"><h2>Header box</h2></div>
+        margin: 20px 25px;
+        height: 250px;
+        width: 40%;
+      }
+      .boxb {
+        background-color: rgb(255, 0, 38);
+        margin: 20px 25px;
+        height: 250px;
+        width: 40%;
+      }
+      .box3 {
+        color: aliceblue;
+        border: 1px solid rgb(240, 234, 234);
+        margin: 10px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+      }
+      .orange {
+        position: fixed;
+        background-color: orange;
+        width: 12px;
+        height: 12px;
+        border-radius: 60px;
+        right: 12px;
+        bottom: 30px;
+      }
+      .box4 {
+        height: 10vh;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="box1"></nav>
+    </header>
     <main>
-        <div class="first">
-            <div id="firstone"><h2>first one</h2></div>
-            <div id="firsttwo"><h2>first second</h2></div>
-        </div>
-        <div class="second">
-            <div id="secondone"><h2>first one</h2></div>
-            <div id="secondtwo"><h2>first second</h2></div>
-        </div>
+      <div class="boxes">
+        <div class="boxa"></div>
+        <div class="boxb"></div>
+      </div>
+      <div class="box3">Welcome to my layout.</div>
+      <div class="orange"></div>
     </main>
-    <div id="ftr"><h2>Footer box</h2></div>
-</body>
+    <footer class="box4"></footer>
+  </body>
 </html>
