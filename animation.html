@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .con {
+        position: relative;
+        width: 70vw;
+        height: 70vh;
+        background-color: rgb(70, 67, 67);
+      }
+      .box {
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgb(124, 82, 82);
+        background-color: rgb(124, 82, 82);
+        border-radius: 60px;
+        position: absolute;
+        bottom: 0px;
+        animation: bouncex 3s linear 1ms infinite normal,
+          bouncey 1s linear 1ms infinite alternate;
+      }
+
+      @keyframes bouncex {
+        from {
+          left: 0%;
+        }
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes bouncey {
+        from {
+          top: 100%;
+        }
+        to {
+          top: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
